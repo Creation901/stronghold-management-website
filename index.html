@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Stronghold Management | Building, Managing & Creating What's Next</title>
+
+  <meta name="description" content="Stronghold Management is a diversified management and development company focused on real estate, business ventures, technology, software development, and innovative projects.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: #1d1d1f;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    nav {
+      width: 100%;
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #151515;
+    }
+
+    .nav-links a {
+      color: #444;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: #9a7435;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 100px 8%;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #111111 0%, #252525 100%);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: #c8a96b;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(46px, 7vw, 82px);
+      line-height: 1.05;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 19px;
+      color: #d5d5d5;
+      line-height: 1.8;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 14px 26px;
+      border: 1px solid #c8a96b;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .button:hover {
+      background: #c8a96b;
+      color: #111;
+    }
+
+    section {
+      padding: 95px 8%;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 55px;
+    }
+
+    .section-heading span {
+      color: #9a7435;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .section-heading h2 {
+      margin-top: 12px;
+      font-size: 38px;
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    .section-heading p {
+      margin-top: 20px;
+      font-size: 17px;
+      color: #666;
+    }
+
+    .services {
+      background: #f7f7f5;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 42px 35px;
+      border-top: 3px solid #c8a96b;
+    }
+
+    .service-number {
+      font-size: 12px;
+      color: #9a7435;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    .service-card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    .approach {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .approach h2 {
+      font-size: 40px;
+      margin-bottom: 25px;
+      line-height: 1.2;
+    }
+
+    .approach p {
+      color: #666;
+      margin-bottom: 18px;
+    }
+
+    .approach-box {
+      background: #151515;
+      color: white;
+      padding: 55px;
+    }
+
+    .approach-box h3 {
+      color: #c8a96b;
+      margin-bottom: 20px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .approach-box p {
+      color: #ddd;
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+    .contact {
+      background: #f7f7f5;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      color: #666;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-email {
+      display: inline-block;
+      margin-top: 28px;
+      color: #8a682f;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 35px 8%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: white;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 65vh;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      section {
+        padding: 70px 7%;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .approach {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .approach-box {
+        padding: 35px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">STRONGHOLD MANAGEMENT</div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">What We Do</a>
+      <a href="#approach">Our Approach</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Stronghold Management</div>
+
+      <h1>Building, Managing & Creating What's Next.</h1>
+
+      <p>
+        Stronghold Management is a diversified management and development
+        company focused on building, managing, and supporting businesses,
+        investments, technology, and innovative ventures.
+      </p>
+
+      <a class="button" href="#services">Explore What We Do</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="section-heading">
+      <span>About Stronghold</span>
+
+      <h2>Opportunity isn't limited to one industry.</h2>
+
+      <p>
+        Stronghold Management brings together strategic thinking, development,
+        management, and execution across a diverse range of initiatives.
+        We pursue opportunities where thoughtful planning, effective
+        management, and innovation can create lasting value.
+      </p>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="section-heading">
+      <span>What We Do</span>
+
+      <h2>Multiple disciplines. One foundation.</h2>
+
+      <p>
+        Our work spans physical assets, business ventures, and digital
+        products, giving Stronghold the flexibility to develop and manage
+        opportunities across multiple industries.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-number">01</div>
+
+        <h3>Real Estate & Investments</h3>
+
+        <p>
+          We pursue, manage, and support real estate opportunities and
+          investment initiatives with a focus on responsible development
+          and long-term value.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">02</div>
+
+        <h3>Business & Corporate Ventures</h3>
+
+        <p>
+          We develop, manage, and support business initiatives across
+          multiple industries, from emerging concepts to growing operations.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">03</div>
+
+        <h3>Technology & Software Development</h3>
+
+        <p>
+          We create and develop digital products, software applications,
+          programs, and technology-driven solutions designed to solve
+          real-world problems.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="approach">
+
+      <div>
+        <div class="eyebrow" style="color:#9a7435;">Our Approach</div>
+
+        <h2>Built for the long term.</h2>
+
+        <p>
+          Stronghold Management was created around a straightforward idea:
+          identify worthwhile opportunities and build them thoughtfully.
+        </p>
+
+        <p>
+          Whether we're developing technology, pursuing real estate
+          opportunities, or building new business ventures, our focus
+          remains the same — create thoughtfully, operate effectively,
+          and build for sustainable long-term value.
+        </p>
+      </div>
+
+      <div class="approach-box">
+        <h3>Our Focus</h3>
+
+        <p>
+          Identify opportunities.<br>
+          Develop practical solutions.<br>
+          Manage with purpose.<br>
+          Build lasting value.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's Connect.</h2>
+
+    <p>
+      For business, development, partnership, technology, or general
+      inquiries, contact Stronghold Management.
+    </p>
+
+    <a class="contact-email" href="mailto:contact@strongholdmanagement.org">
+      contact@strongholdmanagement.org
+    </a>
+  </section>
+
+  <footer>
+    <strong>STRONGHOLD MANAGEMENT</strong>
+
+    <span>© 2026 Stronghold Management. All rights reserved.</span>
+  </footer>
+
+</body>
+</html>
